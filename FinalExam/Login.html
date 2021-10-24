@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        form{
+            text-align:center;
+        }
+        h1{
+            text-align:center;
+            color:red;
+        }
+        #login{
+            padding-top:150px;
+            padding-bottom:250px;
+            border:dashed 2px;
+            width:450px;
+            padding-bottom:5px;
+            margin-left:420px;
+            float:left;
+            height:550px;
+        }
+        #side{
+            width:30%;
+            float:right;
+          
+        }
+         body{
+          background-image:url(book.jpg);
+      }
+
+        
+    </style>
+    <script language="javascript">
+        function check(form) {
+            if (form.userid.value == "abhishek" && form.pswrd.value == "1234") {
+                window.open("main.html", "myWindow");
+            }
+            else { alert("Entered Username or password is incorrect") }
+        }
+    </script>
+</head>
+
+<body>
+    
+   
+    <form>
+        <div id="login">
+            <h1>LaSalle College Login</h1>
+            <br />
+            <label>User name: </label> <input type="text" placeholder="abhishek" name="userid"><br><br>
+            <label>Password: </label><input type="password" placeholder="1234" name="pswrd"><br><br>
+            <input type="button" onclick="check(this.form)" value="Login" /><br>
+        </div>
+    </form>
+    <div id="side">
+        <img src="college.jpg" width="300px"  height="360px"/>
+        <img src="college.jpg" width="300px"  height="360px"/>
+       
+    </div>
+   
+</body>
+</html>

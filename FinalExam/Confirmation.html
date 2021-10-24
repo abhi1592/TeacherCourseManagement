@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="Script.js">
+
+
+    </script>
+    <style>
+         body{
+          background-image:url(book.jpg);
+      }
+         fieldset{
+             margin-left:460px;
+             margin-top:230px;
+         }
+           button{
+         border-radius:4px;
+         padding-top:8px;
+         padding-bottom:8px;
+         margin-top:10px;
+     }
+    </style>
+</head>
+<body onload="GetCookies()">
+    <form id="myform">
+        <fieldset>
+            <legend style="color: white; background-color: rgba(19, 11, 11, 0.62); padding: 10px">
+                <h1>Confirmation</h1>
+            </legend>
+            <label for="course">Course: </label>
+            <label id="course"></label>
+            <br />
+            <br />
+            <label for="teacher">Teacher: </label>
+            <label id="teacher"></label>
+            <br />
+            <br />
+            <label for="hours">Hours: </label>
+            <label id="hours"></label>
+            <br />
+            <br />
+            <button type="button" style="color:white; background-color:rgba(19, 11, 11, 0.62); border:none" onclick="window.open('Login.html') ">Back to login</button>
+
+        </fieldset>
+    </form>
+</body>
+
+ 
+</html>
